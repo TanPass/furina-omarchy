@@ -1,0 +1,159 @@
+# Furina — Hydro Iris: Omarchy shell surfaces.
+#
+# Omarchy v4 reads this file as a complete replacement for the generated
+# default/themed/shell.toml, so every section and key of the upstream schema is
+# present and no key is invented. The Fontaine treatment is:
+#   * one hydro → violet gradient ("35deg") on window borders, focus rings,
+#     selected rows, popup/tooltip/notification cards and the lock field;
+#   * a slightly translucent bar (`background-alpha`) and card surfaces
+#     (`background-alpha` 0.88–0.94) so the wallpaper reads through;
+#   * a touch more air than upstream: 28px bar, 30px controls, 20px panels.
+# Colors are static on purpose: a shipped shell.toml replaces the template
+# output, so no {{ … }} placeholders may appear here.
+
+[bar]
+# Slightly translucent bar; bar text is the theme foreground.
+background       = "#040612"
+background-alpha = 0.84
+text             = "#edf5ff"
+# Attention modules (recording, alerts, updates) use the Fontaine danger tint.
+active           = "#ff7b86"
+scale-with-font  = true
+size-horizontal  = 28
+size-vertical    = 30
+
+[hyprland]
+# Shared gradient tokens: window borders and every card border reference these,
+# so Hyprland, popups, the lock field and the launcher stay in one family.
+active-border            = "rgba(5fb4ffee) rgba(8367ffee) 35deg"
+active-border-foreground = "rgba(5fb4ffaa) rgba(8367ffaa) 35deg"
+
+[controls]
+# Idle chrome is hairline hydro on near-black; focus is the full gradient.
+normal-color        = "#edf5ff"
+normal-fill-alpha   = 0.04
+normal-border       = "#5fb4ff"
+normal-border-width = 1
+normal-border-alpha = 0.3
+
+hover-cursor-color        = "#edf5ff"
+hover-cursor-fill-alpha   = 0.09
+hover-cursor-border       = "#5fb4ff"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.5
+
+focus-color        = "#edf5ff"
+focus-fill-alpha   = 0.1
+focus-border       = "rgba(5fb4ffee) rgba(8367ffee) 35deg"
+focus-border-width = 1
+focus-border-alpha = 0.55
+
+selected-color        = "#edf5ff"
+selected-fill-alpha   = 0.16
+selected-border       = "rgba(5fb4ffee) rgba(8367ffee) 35deg"
+selected-border-width = 1
+selected-border-alpha = 0.8
+
+pressed-fill-alpha   = 0.22
+selection-fill-alpha = 0.32
+
+[spacing]
+# A little roomier than upstream but still on the document scale.
+scale = 1.0
+scale-with-font = true
+control-gap       = 8
+control-padding-x = 12
+control-height    = 30
+popup-row-height  = 30
+row-padding-x     = 14
+panel-padding     = 20
+popup-padding     = 16
+
+[font]
+base-size = 12
+
+[popups]
+background       = "#040612"
+background-alpha = 0.88
+text             = "#edf5ff"
+border           = "hyprland.active-border"
+border-alpha     = 0.9
+border-width     = 1
+
+[tooltip]
+background       = "#01030a"
+background-alpha = 0.94
+text             = "#edf5ff"
+border           = "hyprland.active-border-foreground"
+border-alpha     = 0.8
+
+[notifications]
+background       = "#040612"
+background-alpha = 0.92
+text             = "#edf5ff"
+border           = "hyprland.active-border"
+border-alpha     = 0.9
+border-width     = 1
+countdown        = "#5fb4ff"
+
+[launcher]
+background                = "#01030a"
+background-alpha          = 0.9
+text                      = "#edf5ff"
+border                    = "hyprland.active-border-foreground"
+border-alpha              = 0.9
+scrim                     = "#040612"
+scrim-alpha               = 0.55
+selected-background       = "#243a86"
+selected-background-alpha = 0.38
+selected-text             = "#5fb4ff"
+selected-border           = "hyprland.active-border-foreground"
+selected-border-alpha     = 0.45
+
+[menu]
+background                = "#040612"
+background-alpha          = 0.9
+text                      = "#edf5ff"
+border                    = "hyprland.active-border-foreground"
+border-alpha              = 0.9
+scrim                     = "#040612"
+scrim-alpha               = 0.55
+selected-background       = "#243a86"
+selected-background-alpha = 0.38
+selected-text             = "#5fb4ff"
+selected-border           = "hyprland.active-border-foreground"
+selected-border-alpha     = 0.45
+
+[polkit]
+background       = "#040612"
+background-alpha = 0.92
+text             = "#edf5ff"
+text-error       = "#ff7b86"
+border           = "hyprland.active-border"
+border-error     = "#ff7b86"
+border-alpha     = 0.9
+scrim            = "#040612"
+scrim-alpha      = 0.55
+accent           = "#5fb4ff"
+
+[lock]
+# Lock field: translucent card, gradient border, hydro selection tint.
+background       = "#040612"
+background-alpha = 0.75
+text             = "#f4f9ff"
+placeholder      = "#9ea4ae"
+text-error       = "#ff7b86"
+border           = "hyprland.active-border"
+border-active    = "hyprland.active-border"
+border-error     = "#ff7b86"
+border-alpha     = 1.0
+selection        = "#5fb4ff"
+selection-alpha  = 0.45
+
+[image-picker]
+# The wallpaper carousel shown by `omarchy theme bg`.
+text                    = "#edf5ff"
+selected-border         = "#5fb4ff"
+selected-border-alpha   = 1.0
+unselected-border       = "#edf5ff"
+unselected-border-alpha = 0.3

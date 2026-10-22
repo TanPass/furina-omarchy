@@ -1,0 +1,50 @@
+# ==========================================================================
+# Furina — Hydro Iris
+# Crystal hydro iris: electric blue, glass, near-black.
+#
+# Omarchy v4 theme palette. Every value is a #rrggbb color. Keys follow
+# Omarchy's canonical colors.toml vocabulary; `mode`, the four
+# backgrounds, four foregrounds and the named ANSI colors are consumed by
+# every generated template (terminal, Hyprland, btop, shell, …).
+#
+# One value is lifted from the shared Fontaine palette sheet on purpose:
+#   muted  = palette muted #46567c moved 25% toward foreground -> #707e9d
+# so secondary/inactive text clears the 4.5:1 contrast target from the
+# palette brief (the raw value measures 2.8:1). Every other value is exact.
+#
+# hyprland_active_border is a Hyprland-style gradient (hydro -> violet,
+# 35deg); it feeds both the Hyprland window border and the shell border
+# tokens referenced from shell.toml.
+# ==========================================================================
+
+mode = "dark"
+accent = "#5fb4ff"
+selection = "#243a86"
+muted = "#707e9d"
+background = "#040612"
+dark_background = "#03050e"
+darker_background = "#01030a"
+lighter_background = "#0a1229"
+foreground = "#edf5ff"
+dark_foreground = "#6b7ea6"
+light_foreground = "#f4f9ff"
+bright_foreground = "#ffffff"
+red = "#ff7b86"
+orange = "#ffb08a"
+yellow = "#ffe08a"
+green = "#68e6b0"
+cyan = "#8fe8ff"
+blue = "#5fb4ff"
+magenta = "#a98cff"
+violet = "#8367ff"
+brown = "#937562"
+bright_red = "#ff98a1"
+bright_orange = "#ffc1a4"
+bright_yellow = "#ffe7a4"
+bright_green = "#89ecc1"
+bright_cyan = "#a8edff"
+bright_blue = "#82c5ff"
+bright_magenta = "#bca5ff"
+
+hyprland_active_border = "rgba(5fb4ffee) rgba(8367ffee) 35deg"
+hyprland_inactive_border = "#162352"

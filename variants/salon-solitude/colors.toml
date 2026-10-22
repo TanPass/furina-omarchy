@@ -1,0 +1,50 @@
+# ==========================================================================
+# Furina — Salon Solitude
+# The salon, soft face, quiet solitude: rose-gold, lavender, warm skin.
+#
+# Omarchy v4 theme palette. Every value is a #rrggbb color. Keys follow
+# Omarchy's canonical colors.toml vocabulary; `mode`, the four
+# backgrounds, four foregrounds and the named ANSI colors are consumed by
+# every generated template (terminal, Hyprland, btop, shell, …).
+#
+# One value is lifted from the shared Fontaine palette sheet on purpose:
+#   muted  = palette muted #5e5a78 moved 25% toward foreground -> #837f96
+# so secondary/inactive text clears the 4.5:1 contrast target from the
+# palette brief (the raw value measures 2.8:1). Every other value is exact.
+#
+# hyprland_active_border is a Hyprland-style gradient (hydro -> violet,
+# 35deg); it feeds both the Hyprland window border and the shell border
+# tokens referenced from shell.toml.
+# ==========================================================================
+
+mode = "dark"
+accent = "#dea998"
+selection = "#3a3f63"
+muted = "#837f96"
+background = "#101322"
+dark_background = "#0c0f1b"
+darker_background = "#090b15"
+lighter_background = "#171c31"
+foreground = "#f2edf0"
+dark_foreground = "#8b86a0"
+light_foreground = "#faf6f8"
+bright_foreground = "#ffffff"
+red = "#e8807f"
+orange = "#e8a27f"
+yellow = "#e8cd9b"
+green = "#93c9a8"
+cyan = "#9fc9e8"
+blue = "#8fa9dd"
+magenta = "#c79bd6"
+violet = "#a99bd6"
+brown = "#937562"
+bright_red = "#ed9c9b"
+bright_orange = "#edb69b"
+bright_yellow = "#edd8b1"
+bright_green = "#abd5bb"
+bright_cyan = "#b4d5ed"
+bright_blue = "#a8bce4"
+bright_magenta = "#d3b1df"
+
+hyprland_active_border = "rgba(dea998ee) rgba(a99bd6ee) 35deg"
+hyprland_inactive_border = "#272b46"

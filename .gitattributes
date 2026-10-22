@@ -1,0 +1,13 @@
+# Normalize everything git checks out on Linux/macOS the way Omarchy expects.
+# Without this, a Windows checkout can commit CRLF into shell scripts and TOML.
+* text=auto eol=lf
+
+# Binary assets: never touch the bytes.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.mp4 binary
+
+# Shell scripts must keep their shebang line Unix-clean so `#!/bin/sh` works.
+scripts/*.sh text eol=lf

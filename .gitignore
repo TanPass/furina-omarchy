@@ -1,0 +1,6 @@
+# Local scratch only; never committed.
+_tmp/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

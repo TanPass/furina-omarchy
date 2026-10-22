@@ -1,0 +1,50 @@
+# ==========================================================================
+# Furina — Fontaine Nocturne
+# Fontaine at night in the rain: neon billboards, wet asphalt, indigo sky.
+#
+# Omarchy v4 theme palette. Every value is a #rrggbb color. Keys follow
+# Omarchy's canonical colors.toml vocabulary; `mode`, the four
+# backgrounds, four foregrounds and the named ANSI colors are consumed by
+# every generated template (terminal, Hyprland, btop, shell, …).
+#
+# One value is lifted from the shared Fontaine palette sheet on purpose:
+#   muted  = palette muted #4a5a80 moved 25% toward foreground -> #6f7e9e
+# so secondary/inactive text clears the 4.5:1 contrast target from the
+# palette brief (the raw value measures 2.8:1). Every other value is exact.
+#
+# hyprland_active_border is a Hyprland-style gradient (hydro -> violet,
+# 35deg); it feeds both the Hyprland window border and the shell border
+# tokens referenced from shell.toml.
+# ==========================================================================
+
+mode = "dark"
+accent = "#4ea4ef"
+selection = "#2d3c81"
+muted = "#6f7e9e"
+background = "#060a18"
+dark_background = "#04060f"
+darker_background = "#03050d"
+lighter_background = "#0d152b"
+foreground = "#dfe8f7"
+dark_foreground = "#6d7fa3"
+light_foreground = "#eef4ff"
+bright_foreground = "#ffffff"
+red = "#f26d78"
+orange = "#f2a26d"
+yellow = "#f2d06d"
+green = "#5fd39a"
+cyan = "#63d6f2"
+blue = "#4ea4ef"
+magenta = "#b388ff"
+violet = "#8b6cf0"
+brown = "#937562"
+bright_red = "#f58d96"
+bright_orange = "#f5b68d"
+bright_yellow = "#f5da8d"
+bright_green = "#82ddb0"
+bright_cyan = "#85dff5"
+bright_blue = "#75b8f3"
+bright_magenta = "#c4a2ff"
+
+hyprland_active_border = "rgba(4ea4efee) rgba(8b6cf0ee) 35deg"
+hyprland_inactive_border = "#1b2652"
