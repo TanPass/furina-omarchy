@@ -13,6 +13,21 @@ order:
 Each file is 2560x1440, sRGB JPEG, quality 92, with no text baked in, so it pairs
 cleanly with a dark shell and the lock screen.
 
+## Sources and credits
+
+The images are fan-made *Genshin Impact* illustrations of Furina. This repository
+ships 2560x1440 sRGB JPEG re-encodes (quality 92) of the 3840x2160 originals:
+
+| File | Creator / credit | Source |
+| --- | --- | --- |
+| `0-fontaine-nocturne.jpg` | **rotvirtue** | [Wallpaper Abyss #1409444](https://wall.alphacoders.com/big.php?i=1409444) |
+| `1-hydro-iris.jpg` | **58\_(opal_00_58)** | [Danbooru post 5837276](https://danbooru.donmai.us/posts/5837276) |
+| `2-salon-solitude.jpg` | artist not named on the page | [Wallpaper Abyss #1353872](https://wall.alphacoders.com/big.php?i=1353872) |
+
+Furina, Fontaine and *Genshin Impact* are © HoYoverse / COGNOSPHERE. The art is
+included for personal, non-commercial theming only and is **not** covered by this
+repository's MIT licence; see the last section of the top-level `README.md`.
+
 ## Switching
 
 - `omarchy theme bg next` — next wallpaper in this sorted list (wraps around).

@@ -251,6 +251,8 @@ The theme files, templates and scripts in this repository are released under the
 `LICENSE`). Furina is a character from *Genshin Impact*, © HoYoverse / COGNOSPHERE; the wallpapers,
 preview mockups and palette names here are **fan art** made for personal desktop use, not affiliated
 with or endorsed by HoYoverse. Please do not sell the art or the pack as official merchandise.
+Per-image creators and source pages are listed in
+[`backgrounds/README.md`](backgrounds/README.md#sources-and-credits).
 
 Built for [Omarchy](https://github.com/basecamp/omarchy) by DHH and the Omarchy community — the install
 flow, `colors.toml` schema and `shell.toml` surface are theirs; this pack is just palette data and a
